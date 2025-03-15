@@ -1,0 +1,51 @@
+# Git Commit Message Guidelines
+
+This rule applies to git commit messages and enforces a consistent format.
+
+## Files
+- .git/**
+
+## Description
+When writing commit messages for this project, follow the Conventional Commits specification:
+
+```
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+```
+
+Where:
+- `type` is one of:
+  - `feat`: A new feature
+  - `fix`: A bug fix
+  - `docs`: Documentation only changes
+  - `style`: Changes that do not affect the meaning of the code
+  - `refactor`: A code change that neither fixes a bug nor adds a feature
+  - `perf`: A code change that improves performance
+  - `test`: Adding missing tests or correcting existing tests
+  - `build`: Changes that affect the build system or external dependencies
+  - `ci`: Changes to CI configuration files and scripts
+  - `chore`: Other changes that don't modify src or test files
+- `scope` is optional and represents the section of the codebase
+- `subject` is a short description of the change
+- `body` provides detailed explanation (optional)
+- `footer` contains references to issues or breaking changes (optional)
+
+Examples:
+```
+feat(auth): add login with Google OAuth
+
+fix(api): handle null response from user endpoint
+
+docs: update README with new setup instructions
+```
+
+### Additional Guidelines
+- Use the imperative mood in the subject line
+- Do not end the subject line with a period
+- Limit the subject line to 50 characters
+- Wrap the body at 72 characters
+- Use the body to explain what and why vs. how
+- Reference issues and pull requests liberally after the first line 

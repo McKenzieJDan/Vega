@@ -1,0 +1,102 @@
+{
+  "name": "Vega",
+  "description": "Standardized Development Guidelines",
+  
+  "editor": {
+    "tabSize": 2,
+    "insertSpaces": true,
+    "formatOnSave": true,
+    "formatOnPaste": true,
+    "wordWrap": "off",
+    "rulers": [80, 100],
+    "bracketPairColorization": true,
+    "guides": {
+      "indentation": true,
+      "bracketPairs": true
+    }
+  },
+  
+  "git": {
+    "enabled": true,
+    "autofetch": true,
+    "confirmSync": true,
+    "enableSmartCommit": true,
+    "suggestSmartCommit": true,
+    "autoStash": true,
+    "branchSortOrder": "alphabetically",
+    "pruneOnFetch": true
+  },
+  
+  "terminal": {
+    "integrated": {
+      "shell": {
+        "windows": "powershell.exe",
+        "linux": "/bin/bash",
+        "osx": "/bin/zsh"
+      },
+      "fontSize": 14,
+      "lineHeight": 1.2,
+      "scrollback": 5000,
+      "cursorBlinking": true,
+      "cursorStyle": "line",
+      "fontFamily": "MesloLGS NF, Menlo, Monaco, 'Courier New', monospace"
+    }
+  },
+  
+  "cursorAI": {
+    "enabled": true,
+    "autoSuggest": true,
+    "autoComplete": true,
+    "inlineCompletions": true,
+    "chatEnabled": true,
+    "codeActions": true,
+    "model": "claude-3-opus-20240229",
+    "temperature": 0.2,
+    "maxTokens": 8000,
+    "contextWindow": 200
+  },
+  
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "ms-python.python",
+      "ms-azuretools.vscode-docker",
+      "github.copilot",
+      "eamodio.gitlens",
+      "streetsidesoftware.code-spell-checker",
+      "gruntfuggly.todo-tree",
+      "yzhang.markdown-all-in-one",
+      "bierner.markdown-preview-github-styles",
+      "ms-vscode-remote.remote-containers"
+    ]
+  },
+  
+  "search": {
+    "exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/*.code-search": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.git": true
+    }
+  },
+  
+  "files": {
+    "exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true
+    },
+    "watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/**": true,
+      "**/dist/**": true,
+      "**/build/**": true
+    }
+  }
+} 

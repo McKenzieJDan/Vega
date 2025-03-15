@@ -1,0 +1,40 @@
+# Coding Style Guidelines
+
+This rule applies to all code files and enforces consistent coding style across the project.
+
+## Files
+- **/*.{js,jsx,ts,tsx,py,go,rs,java,c,cpp,h,hpp}
+
+## Description
+When writing or modifying code in this project, follow these style guidelines:
+
+### General Principles
+- Consistency is more important than personal preference
+- Code should be readable and maintainable by the entire team
+- Comments explain "why", code explains "how"
+- Follow the principle of least surprise
+
+### Naming Conventions
+- Use descriptive, intention-revealing names
+- Choose clarity over brevity
+- Use consistent casing conventions:
+  - `camelCase` for variables, functions, methods
+  - `PascalCase` for classes, interfaces, types, enums
+  - `UPPER_SNAKE_CASE` for constants
+  - `kebab-case` for file names, URLs, and CSS classes
+- Avoid abbreviations unless they are well-known
+
+### Whitespace & Formatting
+- Use 2-space indentation by default
+- Limit line length to 80-100 characters
+- Use blank lines to separate logical blocks of code
+- Be consistent with brace placement
+- Avoid trailing whitespace
+- End files with a newline
+
+### Comments & Documentation
+- Write self-documenting code where possible
+- Add comments for complex logic that isn't immediately obvious
+- Document public APIs, interfaces, and functions
+- Keep comments up-to-date with code changes
+- Use JSDoc/docstring style for function documentation 

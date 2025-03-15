@@ -1,0 +1,156 @@
+# Documentation Guidelines
+
+This rule provides standards for project documentation to ensure consistency and completeness across all projects.
+
+## Files
+- **/*.md
+- **/docs/**/*
+
+## Description
+When creating or updating documentation for this project, follow these guidelines:
+
+### README Structure
+
+Every project should have a README.md with the following structure:
+
+```markdown
+# Project Name
+
+A concise, one-paragraph description of what the project does.
+
+[![Technology Badge](https://img.shields.io/badge/Tech-Name-color.svg)](link)
+[![Platform Badge](https://img.shields.io/badge/Platform-Name-color.svg)](link)
+[![License](https://img.shields.io/badge/License-Name-blue.svg)](LICENSE)
+[![Other Relevant Badge](https://img.shields.io/badge/Label-Value-color.svg)](link)
+
+## Features
+
+* 🔑 Key feature one with emoji
+* 🚀 Key feature two with emoji
+* 📊 Key feature three with emoji
+* 🔄 Key feature four with emoji
+
+## Overview
+
+### Category One
+* `component_one.js` - Brief description of what this does
+* `component_two.js` - Brief description of what this does
+
+### Category Two
+* `utility_one.js` - Brief description of what this does
+* `utility_two.js` - Brief description of what this does
+
+## Installation
+
+1. Step one:
+   ```
+   command or code example
+   ```
+
+2. Step two:
+   ```
+   command or code example
+   ```
+
+## Usage Examples
+
+### Example One
+
+```
+code example
+```
+
+### Example Two
+
+```
+code example
+```
+
+## Configuration
+
+Describe configuration options and how to use them.
+
+## API Documentation
+
+Link to or include API documentation.
+
+## Contributing
+
+Instructions for how to contribute to the project.
+
+## License
+
+This project is licensed under the [LICENSE NAME](LICENSE) - see the LICENSE file for details.
+```
+
+### Documentation Best Practices
+
+1. **Keep Documentation Updated**
+   - Update documentation when code changes
+   - Review documentation during code reviews
+   - Treat documentation as a first-class citizen
+
+2. **Write for the Audience**
+   - Consider the technical level of your audience
+   - Provide examples for complex concepts
+   - Use clear, concise language
+   - Avoid jargon unless necessary
+
+3. **Use Visual Aids**
+   - Include diagrams for complex systems
+   - Add screenshots for UI components
+   - Create flowcharts for complex processes
+   - Use tables to organize information
+
+4. **Structure and Organization**
+   - Use consistent headings and subheadings
+   - Create a logical flow of information
+   - Include a table of contents for longer documents
+   - Group related information together
+
+5. **Code Examples**
+   - Provide working, tested code examples
+   - Include comments in code examples
+   - Show both simple and complex use cases
+   - Highlight important parts of the code
+
+### API Documentation Standards
+
+For API documentation, include:
+
+- Endpoint URL and method
+- Request parameters and their types
+- Request body schema with examples
+- Response schema with examples
+- Error codes and their meanings
+- Authentication requirements
+- Rate limiting information
+- Versioning details
+
+### Changelog Guidelines
+
+Maintain a CHANGELOG.md file with:
+
+- Version number and release date
+- Categories for changes (Added, Changed, Deprecated, Removed, Fixed, Security)
+- Reference to issues or pull requests
+- Migration instructions for breaking changes
+
+Example:
+```markdown
+# Changelog
+
+## [1.0.0] - 2023-01-01
+
+### Added
+- Feature X for doing Y (#123)
+- Support for Z platform
+
+### Changed
+- Improved performance of A by 50% (#456)
+- Updated dependency B to version 2.0.0
+
+### Fixed
+- Bug in C when D occurs (#789)
+- Edge case in E component
+``` 

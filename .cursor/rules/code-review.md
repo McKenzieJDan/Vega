@@ -1,0 +1,50 @@
+# Code Review Guidelines
+
+This rule applies to code review processes and provides guidelines for both reviewers and authors.
+
+## Files
+- **/*
+
+## Description
+When participating in code reviews for this project, follow these guidelines:
+
+### Reviewer Responsibilities
+
+- Be respectful and constructive
+- Focus on the code, not the person
+- Provide specific, actionable feedback
+- Explain the reasoning behind suggestions
+- Approve only when you're confident in the changes
+
+### Author Responsibilities
+
+- Explain complex changes or decisions
+- Be open to feedback and suggestions
+- Respond to all comments
+- Make requested changes or explain why they shouldn't be made
+- Thank reviewers for their time and input
+
+### What to Look For
+
+- **Correctness**: Does the code work as intended?
+- **Readability**: Is the code easy to understand?
+- **Maintainability**: Will the code be easy to change in the future?
+- **Performance**: Are there any obvious performance issues?
+- **Security**: Are there any security vulnerabilities?
+- **Tests**: Is the code adequately tested?
+
+### Review Process
+
+1. Author creates a pull request with a clear description
+2. Reviewers examine the code and provide feedback
+3. Author addresses feedback or explains why changes aren't needed
+4. Reviewers approve the changes when satisfied
+5. Author merges the code after approval
+
+### Best Practices
+
+- Keep pull requests small and focused
+- Review code in small batches
+- Use automated tools to catch style and formatting issues
+- Document decisions made during the review process
+- Share knowledge and explain the reasoning behind suggestions 

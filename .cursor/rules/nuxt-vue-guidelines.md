@@ -1,0 +1,165 @@
+# Nuxt 3 and Vue 3 Development Guidelines for mckenz.io
+
+This rule provides specific guidelines for Nuxt 3 and Vue 3 development for the personal blog project, focusing on the Composition API, performance optimization, security, and accessibility.
+
+## Files
+- **/*.{vue,js,ts}
+- **/components/**/*
+- **/composables/**/*
+- **/pages/**/*
+- **/layouts/**/*
+- **/plugins/**/*
+- **/middleware/**/*
+- **/server/**/*
+
+## Description
+When working with Nuxt 3 and Vue 3 in this project, follow these guidelines:
+
+### Vue 3 Composition API Best Practices
+
+- Use `<script setup>` for component logic (as seen in components like NavTabs.vue)
+- Utilize `ref()` and `reactive()` for reactive state management
+- Implement computed properties with `computed()`
+- Use `watch()` and `watchEffect()` for side effects
+- Implement lifecycle hooks with `onMounted()`, `onUpdated()`, etc.
+- Utilize `provide()`/`inject()` for dependency injection (as seen in layouts/default.vue)
+- Extract reusable logic into composables (as seen in useSocialMeta.js and useStructuredData.js)
+- Use `defineProps()` and `defineEmits()` for component interfaces
+- Implement `defineExpose()` when needed to expose methods to parent
+- Prefer `toRefs()` when destructuring reactive objects
+
+### Nuxt 3 Specific Guidelines
+
+- Use Nuxt's built-in components (`<NuxtLink>`, `<NuxtPage>`, etc.)
+- Leverage auto-imports for Composition API functions
+- Implement proper page and layout structure (following the current structure with layouts/default.vue)
+- Use Nuxt modules for extending functionality (as seen in nuxt.config.js with @nuxt/content, @nuxt/image-edge, etc.)
+- Utilize Nuxt's server routes for API endpoints (as seen in server/api directory)
+- Implement proper error handling with error.vue
+- Use Nuxt's state management solutions (useState)
+- Follow the Nuxt directory structure conventions
+
+### Project Structure
+
+```
+project/
+├── .nuxt/               # Build directory (auto-generated)
+├── .output/             # Output directory for production builds
+├── assets/              # Uncompiled assets (styles, images, etc.)
+├── components/          # Vue components
+│   └── content/         # Content-specific components
+├── composables/         # Reusable composition functions
+├── content/             # Content files (for Nuxt Content)
+├── layouts/             # Layout components
+├── pages/               # Application pages
+├── plugins/             # Vue plugins
+├── public/              # Static files
+├── server/              # Server-side code
+│   ├── api/             # API endpoints
+│   └── routes/          # Server routes
+├── utils/               # Utility functions
+├── app.vue              # Main application component
+├── nuxt.config.js       # Nuxt configuration
+└── error.vue            # Error page
+```
+
+### Performance Optimization
+
+- Use dynamic imports for large components
+- Implement proper image optimization using Nuxt's built-in image module (@nuxt/image-edge)
+- Minimize component re-renders by using proper keys and memoization
+- Use proper caching strategies for API calls and static data (as seen in nitro.routeRules in nuxt.config.js)
+- Lazy load routes and components when appropriate
+- Use `shallowRef()` when deep reactivity is not needed
+- Implement virtual scrolling for long lists
+- Utilize `v-once` for content that never changes
+- Avoid unnecessary watchers and computed properties
+- Use `v-memo` for optimizing v-for rendering
+- Implement proper code-splitting strategies
+- Use Vercel Speed Insights for performance monitoring (as seen in app.vue)
+
+### Security Best Practices
+
+- Validate all user inputs on both client and server
+- Use environment variables for sensitive data (as seen in nuxt.config.js runtimeConfig)
+- Follow OWASP guidelines for web application security
+- Sanitize rendered data to prevent XSS attacks
+- Implement proper authentication and authorization
+- Use Content Security Policy (CSP) headers (as seen in nuxt.config.js security settings)
+- Implement rate limiting for API endpoints
+- Use HTTPS in production
+- Keep dependencies updated to avoid vulnerabilities
+- Implement proper error handling without exposing sensitive information
+- Use nuxt-security module for enhanced security (as seen in nuxt.config.js)
+
+### Accessibility Guidelines
+
+- Follow WCAG 2.1 standards
+- Use semantic HTML elements (`<button>`, `<nav>`, `<header>`, etc.)
+- Implement ARIA attributes when necessary
+- Ensure keyboard navigation works for all interactive elements
+- Maintain sufficient color contrast (minimum 4.5:1 for normal text)
+- Provide alt text for images and aria-labels for interactive elements
+- Support screen readers by using proper roles and attributes
+- Implement focus management for modals and dialogs
+- Test with screen readers and keyboard navigation
+- Provide text alternatives for non-text content
+- Ensure forms have proper labels and error messages
+- Use proper heading hierarchy
+
+### API Integration
+
+- Implement proper error handling for API calls
+- Use environment variables for API keys and secrets
+- Implement caching for API responses
+- Use proper authentication for API calls
+- Follow RESTful API design principles
+- Implement proper rate limiting
+- Use proper error handling for API responses
+- Implement proper logging for API calls
+- Use proper validation for API inputs and outputs
+- Implement proper security for API endpoints
+- Use proper documentation for API endpoints
+
+### Content Management
+
+- Use Nuxt Content module for managing content
+- Implement proper frontmatter for content files
+- Use proper markdown syntax for content
+- Implement proper syntax highlighting for code blocks
+- Use proper image optimization for content images
+- Implement proper SEO for content pages
+- Use proper metadata for content pages
+- Implement proper social sharing for content pages
+- Use proper tagging and categorization for content
+- Implement proper search functionality for content
+- Use proper pagination for content lists
+
+### SEO and Social Sharing
+
+- Implement proper meta tags for SEO (as seen in useSocialMeta.js)
+- Use proper structured data for SEO (as seen in useStructuredData.js)
+- Implement proper canonical URLs
+- Use proper Open Graph tags for social sharing
+- Implement proper Twitter Card tags
+- Use proper sitemap generation
+- Implement proper robots.txt
+- Use proper alt text for images
+- Implement proper heading hierarchy
+- Use proper schema.org markup
+- Implement proper JSON-LD for structured data
+
+### Testing Guidelines
+
+- Write unit tests for components
+- Implement component testing
+- Write end-to-end tests
+- Test for accessibility issues
+- Implement proper mocking for API calls
+- Test for edge cases and error states
+- Ensure good test coverage for critical paths
+
+## Related Guidelines
+
+@file .cursor/rules/coding-style.md
+@file .cursor/rules/documentation.md 

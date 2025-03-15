@@ -51,7 +51,7 @@ Vega provides a structured approach to maintaining consistent development practi
 
 1. Add this repository as a submodule to your project:
    ```bash
-   git submodule add https://github.com/yourusername/Vega.git .vega
+   git submodule add https://github.com/McKenzieJDan/Vega.git .vega
    ```
 
 2. Create a symbolic link to the `.cursor` directory:

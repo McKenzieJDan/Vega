@@ -16,10 +16,10 @@ Every project should have a README.md with the following structure:
 
 A concise, one-paragraph description of what the project does.
 
-[![Technology Badge](https://img.shields.io/badge/Tech-Name-color.svg)](link)
-[![Platform Badge](https://img.shields.io/badge/Platform-Name-color.svg)](link)
-[![License](https://img.shields.io/badge/License-Name-blue.svg)](LICENSE)
-[![Other Relevant Badge](https://img.shields.io/badge/Label-Value-color.svg)](link)
+[![Technology Badge](mdc:https:/img.shields.io/badge/Tech-Name-color.svg)](link)
+[![Platform Badge](mdc:https:/img.shields.io/badge/Platform-Name-color.svg)](link)
+[![License](mdc:https:/img.shields.io/badge/License-Name-blue.svg)](LICENSE)
+[![Other Relevant Badge](mdc:https:/img.shields.io/badge/Label-Value-color.svg)](link)
 
 ## Features
 
@@ -78,7 +78,7 @@ Instructions for how to contribute to the project.
 
 ## License
 
-This project is licensed under the [LICENSE NAME](LICENSE) - see the LICENSE file for details.
+This project is licensed under the [LICENSE NAME](mdc:LICENSE) - see the LICENSE file for details.
 ```
 
 ## Documentation Best Practices

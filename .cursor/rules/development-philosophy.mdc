@@ -52,6 +52,6 @@ When developing for this project, follow these core principles:
 
 This philosophy should be applied in conjunction with our other guidelines:
 
-- [Coding Style](.mdc/coding-style.mdc)
-- [Git Commits](.mdc/git-commits.mdc)
-- [Code Review](.mdc/code-review.mdc)
+- [Coding Style](mdc:.mdc/coding-style.mdc)
+- [Git Commits](mdc:.mdc/git-commits.mdc)
+- [Code Review](mdc:.mdc/code-review.mdc)

@@ -1,5 +1,5 @@
 ---
-description:  This rule applies to code review processes and provides guidelines for both reviewers and authors.
+description: This rule applies to code review processes and provides guidelines for both reviewers and authors.
 globs: **/*
 alwaysApply: false
 ---

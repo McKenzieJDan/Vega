@@ -153,5 +153,5 @@ project/
 
 ## Related Guidelines
 
-- [Coding Style](.mdc/coding-style.mdc)
-- [Documentation](.mdc/documentation.mdc)
+- [Coding Style](mdc:.mdc/coding-style.mdc)
+- [Documentation](mdc:.mdc/documentation.mdc)

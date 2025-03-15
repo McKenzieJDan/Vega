@@ -1,15 +1,13 @@
+---
+description: This rule provides standards for project documentation to ensure consistency and completeness across all projects.
+globs: **/*.md, **/docs/**/*
+alwaysApply: false
+---
 # Documentation Guidelines
 
-This rule provides standards for project documentation to ensure consistency and completeness across all projects.
-
-## Files
-- **/*.md
-- **/docs/**/*
-
-## Description
 When creating or updating documentation for this project, follow these guidelines:
 
-### README Structure
+## README Structure
 
 Every project should have a README.md with the following structure:
 
@@ -83,7 +81,7 @@ Instructions for how to contribute to the project.
 This project is licensed under the [LICENSE NAME](LICENSE) - see the LICENSE file for details.
 ```
 
-### Documentation Best Practices
+## Documentation Best Practices
 
 1. **Keep Documentation Updated**
    - Update documentation when code changes
@@ -114,7 +112,7 @@ This project is licensed under the [LICENSE NAME](LICENSE) - see the LICENSE fil
    - Show both simple and complex use cases
    - Highlight important parts of the code
 
-### API Documentation Standards
+## API Documentation Standards
 
 For API documentation, include:
 
@@ -127,7 +125,7 @@ For API documentation, include:
 - Rate limiting information
 - Versioning details
 
-### Changelog Guidelines
+## Changelog Guidelines
 
 Maintain a CHANGELOG.md file with:
 
@@ -153,4 +151,4 @@ Example:
 ### Fixed
 - Bug in C when D occurs (#789)
 - Edge case in E component
-``` 
+```

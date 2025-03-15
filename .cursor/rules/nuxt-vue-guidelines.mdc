@@ -1,21 +1,13 @@
+---
+description: This rule provides specific guidelines for Nuxt 3 and Vue 3 development for the personal blog project, focusing on the Composition API, performance optimization, security, and accessibility.
+globs: **/*.{vue,js,ts}, **/components/**/*, **/composables/**/*, **/pages/**/*, **/layouts/**/*, **/plugins/**/*, **/middleware/**/*, **/server/**/*
+alwaysApply: false
+---
 # Nuxt 3 and Vue 3 Development Guidelines for mckenz.io
 
-This rule provides specific guidelines for Nuxt 3 and Vue 3 development for the personal blog project, focusing on the Composition API, performance optimization, security, and accessibility.
-
-## Files
-- **/*.{vue,js,ts}
-- **/components/**/*
-- **/composables/**/*
-- **/pages/**/*
-- **/layouts/**/*
-- **/plugins/**/*
-- **/middleware/**/*
-- **/server/**/*
-
-## Description
 When working with Nuxt 3 and Vue 3 in this project, follow these guidelines:
 
-### Vue 3 Composition API Best Practices
+## Vue 3 Composition API Best Practices
 
 - Use `<script setup>` for component logic (as seen in components like NavTabs.vue)
 - Utilize `ref()` and `reactive()` for reactive state management
@@ -28,7 +20,7 @@ When working with Nuxt 3 and Vue 3 in this project, follow these guidelines:
 - Implement `defineExpose()` when needed to expose methods to parent
 - Prefer `toRefs()` when destructuring reactive objects
 
-### Nuxt 3 Specific Guidelines
+## Nuxt 3 Specific Guidelines
 
 - Use Nuxt's built-in components (`<NuxtLink>`, `<NuxtPage>`, etc.)
 - Leverage auto-imports for Composition API functions
@@ -39,7 +31,7 @@ When working with Nuxt 3 and Vue 3 in this project, follow these guidelines:
 - Use Nuxt's state management solutions (useState)
 - Follow the Nuxt directory structure conventions
 
-### Project Structure
+## Project Structure
 
 ```
 project/
@@ -63,7 +55,7 @@ project/
 └── error.vue            # Error page
 ```
 
-### Performance Optimization
+## Performance Optimization
 
 - Use dynamic imports for large components
 - Implement proper image optimization using Nuxt's built-in image module (@nuxt/image-edge)
@@ -78,7 +70,7 @@ project/
 - Implement proper code-splitting strategies
 - Use Vercel Speed Insights for performance monitoring (as seen in app.vue)
 
-### Security Best Practices
+## Security Best Practices
 
 - Validate all user inputs on both client and server
 - Use environment variables for sensitive data (as seen in nuxt.config.js runtimeConfig)
@@ -92,7 +84,7 @@ project/
 - Implement proper error handling without exposing sensitive information
 - Use nuxt-security module for enhanced security (as seen in nuxt.config.js)
 
-### Accessibility Guidelines
+## Accessibility Guidelines
 
 - Follow WCAG 2.1 standards
 - Use semantic HTML elements (`<button>`, `<nav>`, `<header>`, etc.)
@@ -107,7 +99,7 @@ project/
 - Ensure forms have proper labels and error messages
 - Use proper heading hierarchy
 
-### API Integration
+## API Integration
 
 - Implement proper error handling for API calls
 - Use environment variables for API keys and secrets
@@ -121,7 +113,7 @@ project/
 - Implement proper security for API endpoints
 - Use proper documentation for API endpoints
 
-### Content Management
+## Content Management
 
 - Use Nuxt Content module for managing content
 - Implement proper frontmatter for content files
@@ -135,7 +127,7 @@ project/
 - Implement proper search functionality for content
 - Use proper pagination for content lists
 
-### SEO and Social Sharing
+## SEO and Social Sharing
 
 - Implement proper meta tags for SEO (as seen in useSocialMeta.js)
 - Use proper structured data for SEO (as seen in useStructuredData.js)
@@ -149,7 +141,7 @@ project/
 - Use proper schema.org markup
 - Implement proper JSON-LD for structured data
 
-### Testing Guidelines
+## Testing Guidelines
 
 - Write unit tests for components
 - Implement component testing
@@ -161,5 +153,5 @@ project/
 
 ## Related Guidelines
 
-@file .cursor/rules/coding-style.md
-@file .cursor/rules/documentation.md 
+- [Coding Style](.mdc/coding-style.mdc)
+- [Documentation](.mdc/documentation.mdc)

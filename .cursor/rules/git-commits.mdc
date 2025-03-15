@@ -1,11 +1,10 @@
+---
+description: This rule applies to git commit messages and enforces a consistent format.
+globs: .git/**
+alwaysApply: false
+---
 # Git Commit Message Guidelines
 
-This rule applies to git commit messages and enforces a consistent format.
-
-## Files
-- .git/**
-
-## Description
 When writing commit messages for this project, follow the Conventional Commits specification:
 
 ```
@@ -42,10 +41,10 @@ fix(api): handle null response from user endpoint
 docs: update README with new setup instructions
 ```
 
-### Additional Guidelines
+## Additional Guidelines
 - Use the imperative mood in the subject line
 - Do not end the subject line with a period
 - Limit the subject line to 50 characters
 - Wrap the body at 72 characters
 - Use the body to explain what and why vs. how
-- Reference issues and pull requests liberally after the first line 
+- Reference issues and pull requests liberally after the first line

@@ -1,14 +1,13 @@
+---
+description: This rule outlines the core development philosophy for this project and references other specific guidelines.
+globs: **/*
+alwaysApply: false
+---
 # Development Philosophy
 
-This rule outlines the core development philosophy for this project and references other specific guidelines.
-
-## Files
-- **/*
-
-## Description
 When developing for this project, follow these core principles:
 
-### Code Quality Principles
+## Code Quality Principles
 
 1. **Simplicity Over Complexity**
    - Write simple, straightforward code
@@ -33,7 +32,7 @@ When developing for this project, follow these core principles:
    - Focus on behavior, not implementation details
    - Aim for high coverage of critical paths
 
-### Error Handling
+## Error Handling
 
 - Be explicit about error cases
 - Provide helpful error messages
@@ -41,7 +40,7 @@ When developing for this project, follow these core principles:
 - Gracefully handle errors in production
 - Log errors with appropriate context
 
-### Security Practices
+## Security Practices
 
 - Never store secrets in code repositories
 - Validate all user input
@@ -53,6 +52,6 @@ When developing for this project, follow these core principles:
 
 This philosophy should be applied in conjunction with our other guidelines:
 
-@file .cursor/rules/coding-style.md
-@file .cursor/rules/git-commits.md
-@file .cursor/rules/code-review.md 
+- [Coding Style](.mdc/coding-style.mdc)
+- [Git Commits](.mdc/git-commits.mdc)
+- [Code Review](.mdc/code-review.mdc)
